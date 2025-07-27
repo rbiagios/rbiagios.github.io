@@ -24,3 +24,14 @@ footer {
   color: #555;
   text-align: center;
 }
+
+figure {
+  text-align: center;
+  margin: 1em 0;
+}
+
+figcaption {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 0.5em;
+}
