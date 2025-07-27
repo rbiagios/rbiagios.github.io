@@ -35,3 +35,29 @@ figcaption {
   color: #555;
   margin-top: 0.5em;
 }
+
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 2em 0;
+}
+
+.image-row img {
+  width: 200px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.image-row img:hover {
+  transform: scale(1.05);
+}
+
+.image-row figcaption {
+  text-align: center;
+  font-size: 0.9em;
+  color: #444;
+  margin-top: 0.5em;
+}
