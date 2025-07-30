@@ -61,3 +61,32 @@ figcaption {
   color: #444;
   margin-top: 0.5em;
 }
+#restaurants {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #fff8e1;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#restaurants h2 {
+  color: #6a1b9a;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+#restaurants ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#restaurants li {
+  padding: 10px 0;
+  font-size: 1.1em;
+}
+
+#restaurants a {
+  color: #4a148c;
+  text-decoration: none;
+  font-weight: bold;
+}

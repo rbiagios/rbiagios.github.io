@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tippecanoe County Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Optional: Add styling for weather forecast display */
+    .forecast-item {
+      margin: 4px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>📍 Tippecanoe County Dashboard</h1>
+
+  <div id="clock">Loading time...</div>
+  <div id="weather">Loading weather...</div>
+  <div id="forecast-display">Loading forecast...</div>
+<section id="restaurants">
+  <h2>🍽️ Explore Tippecanoe Eats by Cuisine</h2>
+
+  <!-- 🍔 American & Burgers -->
+  <details>
+    <summary>🍔 American & Burgers</summary>
+    <div class="event-item"><a href="https://www.triplexxxfamilyrestaurant.com/" target="_blank">Triple XXX Family Restaurant – Classic diner vibes <span class="features">🌳 ⏰</span></a></div>
+    <div class="event-item"><a href="https://www.bruburgerbar.com/location/bru-burger-bar-lafayette-in/" target="_blank">BRU Burger Bar – Gourmet burgers downtown <span class="features">🥬 ⏰</span></a></div>
+    <div class="event-item"><a href="https://www.8elevenbistro.com/" target="_blank">8Eleven Modern Bistro – Upscale American fare <span class="features">🥬</span></a></div>
+    <div class="event-item"><a href="https://www.thebryantwl.com/" target="_blank">The Bryant – Modern American with cocktails <span class="features">🌳 ⏰</span></a></div>
+    <div class="event-item"><a href="https://www.yelp.com/biz/mountain-jacks-steakhouse-lafayette" target="_blank">Mountain Jack’s – Steakhouse with classic charm <span class="fallback">(via Yelp)</span></a></div>
+    <div class="event-item"><a href="https://www.yelp.com/biz/ajs-burgers-and-beef-west-lafayette" target="_blank">AJ’s Burgers & Beef – Local favorite <span class="fallback">(via Yelp)</span> <span class="features">⏰</span></a></div>
+    <div class="event-item"><a href="https://www.christosgrill.com/" target="_blank">Christos – Family-style American comfort food <span class="features">🌳</span></a></div>
+    <div class="event-item"><a href="https://www.dognsudsgreaterlafayette.com/" target="_blank">Dog N Suds – Retro drive-in with root beer <span class="features">🌳 ⏰</span></a></div>
+    <div class="event-item"><a href="https://dtkirbys.com/" target="_blank">DT Kirby’s – Burgers, beer, and bold flavors <span class="features">⏰</span></a></div>
+    <div class="event-item"><a href="https://www.fiveguys.com/" target="_blank">Five Guys – Fast casual burgers & fries</a></div>
+  </details>
+
+  <!-- 🍝 Italian -->
+  <details>
+    <summary>🍝 Italian</summary>
+    <div class="event-item"><a href="https://lascalaitalianrestaurant.com/" target="_blank">La Scala – Farm-to-table Italian downtown</a></div>
+    <div class="event-item"><a href="https://meetyouatarnis.com/" target="_blank">Arni’s – Pizza and family-style dining</a></div>
+    <div class="event-item"><a href="https://www.monicals.com/locations/monicals-pizza-of-west-lafayette/" target="_blank">Monical’s Pizza – Midwest classic</a></div>
+    <div class="event-item"><a href="https://www.olivegarden.com/locations/in/lafayette/lafayette-in-south-st/1384" target="_blank">Olive Garden – Familiar Italian chain</a></div>
+    <div class="event-item"><a href="https://www.fazolis.com/stores/in-lafayette-3457-state-rd-26-east-47905/" target="_blank">Fazoli’s – Fast casual Italian</a></div>
+    <div class="event-item"><a href="https://www.brunodough.com/" target="_blank">Bruno’s Pizza – Purdue tradition since 1955</a></div>
+    <div class="event-item"><a href="https://www.pizzahut.com/" target="_blank">Pizza Hut – National chain with local presence</a></div>
+    <div class="event-item"><a href="https://www.dominos.com/" target="_blank">Domino’s Pizza – Fast delivery and carryout</a></div>
+    <div class="event-item"><a href="https://locations.papajohns.com/united-states/in/46992/wabash/1308-n-cass-st" target="_blank">PapaJohns Pizza – Local artisan pies <span class="fallback">(via Yelp)</span></a></div>
+  </details>
+
+  <!-- 🍜 Asian & Korean -->
+  <details>
+    <summary>🍜 Asian & Korean</summary>
+    <div class="event-item"><a href="https://www.yelp.com/biz/kimchi-korean-restaurant-west-lafayette" target="_blank">Kimchi Korean Restaurant – Cozy Korean comfort food <span class="fallback">(via Yelp)</span></a></div>
+    <div class="event-item"><a href="https://www.yelp.com/biz/sushi-don-west-lafayette" target="_blank">Sushi Don – Fresh sushi rolls <span class="fallback">(via Yelp)</span></a></div>
+    <div class="event-item"><a href="https://www.xinasianbistro.com/" target="_blank">Xin Asian Bistro – Sushi & hibachi</a></div>
+    <div class="event-item"><a href="https://www.ricecafe.net/" target="_blank">Rice Cafe – Quick Asian fusion</a></div>
+    <div class="event-item"><a href="https://www.shugerestaurant.com/" target="_blank">Shu Ge – Traditional Chinese dishes</a></div>
+    <div class="event-item"><a href="https://www.chinadragonwestlafayette.com/" target="_blank">China Dragon – Local Chinese favorite</a></div>
+    <div class="event-item"><a href="https://www.yelp.com/biz/happy-china-west-lafayette" target="_blank">Happy China – Casual Chinese takeout <span class="fallback">(via Yelp)</span></a></div>
+    <div class="event-item"><a href="https://tasteatpurdue.com/" target="_blank">Taste – Asian fusion near Purdue</a></div>
+    <div class="event-item"><a href="https://www.pekinglafayette.com/" target="_blank">Peking Chinese Restaurant – Lafayette staple</a></div>
+  </details>
+
+  <!-- 🥙 Greek & Mediterranean -->
+  <details>
+    <summary>🥙 Greek & Mediterranean</summary>
+    <div class="event-item"><a href="https://www.parthenongrill.com/" target="_blank">Parthenon Greek American Grill – Gyros & Greek platters</a></div>
+    <div class="event-item"><a href="https://www.bluenilerestaurant.net/" target="_blank">Blue Nile Restaurant – Ethiopian & Mediterranean fusion</a></div>
+    <div class="event-item"><a href="https://ordergcr.com/" target="_blank">Grilled Chicken and Rice – Mediterranean bowls & wraps</a></div>
+    <div class="event-item"><a href="https://restaurants.eatgarbanzo.com/in/west-lafayette/online-ordering-location/" target="_blank">Garbanzo Mediterranean Fresh – Fast casual Mediterranean</a></div>
+    <div class="event-item"><a href="https://cappadociamediterranean.com/" target="_blank">Cappadocia Mediterranean Grill – Turkish & Mediterranean specialties</a></div>
+    <div class="event-item"><a href="https://www.thegreatgreekgrill.com/" target="_blank">The Great Greek Mediterranean Grill – Modern take on classic flavors</a></div>
+    <div class="event-item"><a href="https://nisitaverna.com/" target="_blank">Nisi Greek Taverna – Elevated Greek dining experience</a></div>
+    <div class="event-item"><a href="https://indygyros.com/" target="_blank">Indy Gyros – Greek platters & Mediterranean wraps</a></div>
+  </details>
+
+  <!-- ☕ Cafes & Brunch -->
+  <details>
+    <summary>☕ Cafes & Brunch</summary>
+    <div class="event-item"><a href="https://www.literatocafe.com/" target="_blank">Cafe Literato – Wood-fired pizza & espresso</a></div>
+    <div class="event-item"><a href="https://greyhousecoffee.com/" target="_blank">Greyhouse Coffee – Artisan drinks & cozy vibe</a></div>
+    <div class="event-item"><a href="https://www.aubonpain.com/" target="_blank">Au Bon Pain – Bakery café near Purdue</a></div>
+    <div class="event-item"><a href="https://www.panerabread.com/en-us/cafe/locations/in/west-lafayette/328-east-state-street" target="_blank">Panera Bread – Soups, salads & fresh bread</a></div>
+    <div class="event-item"><a href="https://www.triplexxxfamilyrestaurant.com/" target="_blank">Triple XXX Family Restaurant – Breakfast & diner classics</a></div>
+    <div class="event-item"><a href="https://www.starbucks.com/store-locator/store/18269/" target="_blank">Starbucks – Sagamore Pkwy location</a></div>
+    <div class="event-item"><a href="https://www.starbucks.com/store-locator?map=39.635307,-101.337891,5z" target="_blank">Starbucks – West Lafayette location</a></div>
+    <div class="event-item"><a href="https://viennacoffeehouse-westlafayette.com/" target="_blank">Vienna Espresso Bar & Bakery – European-style café</a></div>
+    <div class="event-item"><a href="https://countrycafelafayettein.com/" target="_blank">The Country Cafe – Homestyle breakfast & brunch</a></div>
+  </details>
+
+  <!-- 🌮 Mexican Eats -->
+  <details>
+    <summary>🌮 Mexican Eats</summary>
+    <div class="event-item"><a href="https://lasbrazastaqueria.com/" target="_blank">Las Brazas Taqueria – Street-style tacos & casual vibe</a></div>
+    <div class="event-item"><a href="https://www.mexicanrestaurantlahacienda.com/" target="_blank">La Hacienda El Sol – Family-friendly with bold flavors</a></div>
+    <div class="event-item"><a href="https://www.lafayetteinlindomexico.com/" target="_blank">Lindo Mexico – Vibrant plates & margaritas</a></div>
+    <div class="event-item"><a href="https://dosamigosin.com/" target="_blank">Dos Amigos – West Lafayette favorite near the levee</a></div>
+    <div class="event-item"><a href="https://nomnomtacosandtequila.com/" target="_blank">Nom Nom Tacos & Tequila – Trendy downtown spot</a></div>
+    <div class="event-item"><a href="https://laaldeaauthenticmexicanrestaurantin.com/" target="_blank">La Aldea – Authentic Mexican with cozy atmosphere</a></div>
+    <div class="event-item"><a href="https://www.loschaparritosmexicanfood.com/" target="_blank">Chaparritos – Highly rated with fresh ingredients</a></div>
+    <div class="event-item"><a href="https://www.homeofpurdue.com/listing/cinco-de-mayo-mexican-grill-%28tippecanoe-mall%29/4909/" target="_blank">Cinco De Mayo Mexican Grill – Burritos, tamales & tortas</a></div>
+    <div class="event-item"><a href="https://www.chipotle.com/" target="_blank">Chipotle – Custom burritos and bowls</a></div>
+    <div class="event-item"><a href="https://www.yelp.com/biz/taco-bell-lafayette-3" target="_blank">Taco Bell – Late-night classic <span class="fallback">(via Yelp)</span></a></div>
+  </details>
+</section>
+  <p><a href="index.html">⬅️ Back to Home</a></p>
+
+  <script src="js/clock.js"></script>
+  <script src="js/weather.js"></script>
+
+</body>
+</html>
