@@ -90,3 +90,33 @@ figcaption {
   text-decoration: none;
   font-weight: bold;
 }
+
+#map {
+  height: 400px;
+  width: 100%;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+}
+
+.restaurant-section h3,
+.restaurant-section li {
+  margin-bottom: 18px;     /* More vertical space between items */
+  padding: 14px 16px;      /* More padding for easier tapping */
+  border-radius: 8px;
+  font-size: 1.1em;
+}
+
+.restaurant-section h3:hover,
+.restaurant-section li:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.restaurant-section a {
+  display: inline-block;
+  padding: 12px 0;         /* Larger tap area for links */
+}
+
+
+
+

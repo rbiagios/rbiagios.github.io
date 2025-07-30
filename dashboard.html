@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <title>Tippecanoe County Dashboard</title>
   <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
   <style>
     /* Optional: Add styling for weather forecast display */
     .forecast-item {
@@ -109,6 +113,23 @@
 
   <script src="js/clock.js"></script>
   <script src="js/weather.js"></script>
+
+<section id="map-section">
+  <h2>🗺️ Tippecanoe County Map</h2>
+  <div id="map"></div>
+</section>
+
+<script>
+  // 🗺️ Tippecanoe Map
+  const map = L.map('map').setView([40.417, -86.875], 10);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap contributors'
+  }).addTo(map);
+
+  L.marker([40.417, -86.875]).addTo(map)
+    .bindPopup('📍 Tippecanoe County')
+    .openPopup();
+</script>
 
 </body>
 </html>
